@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Filmes com Bootstrap</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+
+    <!-- essa é a classe onde colocaremos o menu -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+
+        <!-- aqui colocamos o botão que será o hamburger -->
+        <button type="button" class="navbar-toggler d-lg-none">
+            <img src="Assets/img/hamburger.gif" alt="Menu">
+        </button>
+
+        <!-- aqui colocamos o logo da Netflix -->
+        <a href="#" class="navbar-brand flex-grow-1">
+            <img src="Assets/img/logo.png" alt="Netflix" class="my-1 mx-2">
+        </a>
+
+        <!-- aqui colocamos no lg os dois itens do menu -->
+        <ul class="nav text-white d-none d-lg-flex">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-reset active d-xl-none">Navegar</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-reset d-xl-none">Infantil</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-reset d-none d-xl-flex active">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-reset d-none d-xl-flex">Séries</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-reset d-none d-xl-flex">Filmes</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-reset d-none d-xl-flex">Adicionados Recentemente</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-reset d-none d-xl-flex">Minha Lista</a>
+            </li>
+        </ul>
+
+        <!-- aqui colocamos o campo de busca -->
+        <form class="form-inline">
+            <input type="search" class="form-control" placeholder="Busca">
+        </form>
+
+        <!-- aqui colocamos no lg o ícone e o nome do usuário fora do sidebar -->
+        <div class="media text-white p-2 d-none d-lg-flex justify-content-center align-items-center">
+            <img src="Assets/img/contact.svg" alt="Avatar" class="mr-2">
+            <div class="media-body">
+                <p class="h6 m-0">JESSICA CAMPOS</p>
+            </div>
+        </div>
+
+        <!-- aqui colocamos quando o menu estiver em resolução xs, sm e md o login e os itens do menu dentro do sidebar (hamburger) -->
+        <ul class="list-unstyled font-weight-bold sidebar">
+            <li class="media media avatar">
+                <img src="Assets/img/contact.svg" alt="Avatar" class="mr-2">
+                <div class="media-body">
+                    <p class="h6 m-0">JESSICA CAMPOS</p>
+                    <small>Trocar de perfil</small>
+                </div>
+            </li>
+            <li class="divider"></li>
+            <li><a href="" class="text-reset">Inicio</a></li>
+            <li><a href="" class="text-reset">Minha Lista</a></li>
+            <li><a href="" class="text-reset">Séries de ação e aventura</a></li>
+            <li><a href="" class="text-reset">Ação e aventura</a></li>
+            <li><a href="" class="text-reset">Séries teen</a></li>
+            <li><a href="" class="text-reset">Filmes africanos</a></li>
+            <li><a href="" class="text-reset">Séries da América</a></li>
+            <li><a href="" class="text-reset">Filmes de Anime</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- aqui colocamos os itens que aparecerão no banner -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 full-banner text-white">
+                <div class="p-4 d-flex justify-content-start align-items-center h-100">
+                    <div>
+                        <h1 class="h3">Friends</h1>
+                        <small class="d-flex my-2">
+                            <span class="mr-3">1994</span>
+                            <span class="mr-3">10 temporadas</span>
+                        </small>
+                        <p class="d-none d-lg-block">Um grupo de amigos se reúnem e partilham de grandes e divertidos momentos juntos. Considerada uma das melhores séries de comédia.</p>
+                        <a href="#" class="btn btn-primary text-uppercase font-weight-bold">Assistir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- aqui colocamos o catálogo de filmes por categoria -->
+        <div class="row no-gutters">
+            <div class="col-12">
+                <div class="p-3 list-titles">
+                    <h2 class="h4">Adicionados recentemente</h2>
+                    <div class="d-flex flex-nowrap overflow-hidden">
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/umbrella academy.jpg" alt="Umbrella Academy" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/suits-banner.jpg" alt="Suits-banner" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/o date perfeito.jpg" alt="O date perfeito" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/doutor estranho.jpg" alt="Doutor estranho" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/brooklyn nine nine.jpg" alt="Brooklyn nine nine" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/o date perfeito.jpg" alt="O date perfeito" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/hobbs e shaw.jpg" alt="Hobbs e Shaw" class="w-100"></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-12">
+                <div class="p-3 list-titles">
+                    <h2 class="h4">Em alta</h2>
+                    <div class="d-flex flex-nowrap overflow-hidden">
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/umbrella academy.jpg" alt="Umbrella Academy" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/suits-banner.jpg" alt="Suits-banner" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/o date perfeito.jpg" alt="O date perfeito" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/doutor estranho.jpg" alt="Doutor estranho" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/brooklyn nine nine.jpg" alt="Brooklyn nine nine" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/o date perfeito.jpg" alt="O date perfeito" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/hobbs e shaw.jpg" alt="Hobbs e Shaw" class="w-100"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-12">
+                <div class="p-3 list-titles">
+                    <h2 class="h4">Continuar assistindo como <span class="text-uppercase">JESSICA CAMPOS</span></h2>
+                    <div class="d-flex flex-nowrap overflow-hidden">
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/umbrella academy.jpg" alt="Umbrella Academy" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/suits-banner.jpg" alt="Suits-banner" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/o date perfeito.jpg" alt="O date perfeito" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/doutor estranho.jpg" alt="Doutor estranho" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/brooklyn nine nine.jpg" alt="Brooklyn nine nine" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/o date perfeito.jpg" alt="O date perfeito" class="w-100"></a>
+                        <a href="" class="px-1 my-3"><img src="Assets/img/catalogo/hobbs e shaw.jpg" alt="Hobbs e Shaw" class="w-100"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- aqui colocamos o footer(rodapé) -->
+    <footer class="row no-gutters p-4">
+        <a href="" class="col-12 col-md-3 text-reset">Termos de uso</a>
+        <a href="" class="col-12 col-md-3 text-reset">Declaração de privacidade</a>
+        <a href="" class="col-12 col-md-3 text-reset">Preferência de cookies</a>
+        <a href="" class="col-12 col-md-3 text-reset">Centro de ajuda</a>
+    </footer>
+        
+
+    <script src="Assets/js/popper.min.js"></script>
+    <script src="Assets/js/jquery-3.5.1.min.js"></script>
+    <script src="Assets/js/bootstrap.min.js"></script>
+
+    <script>
+
+        const btn = document.querySelector('.navbar-toggler');
+        const navbar = document.querySelector('.navbar');
+
+        btn.addEventListener('click', e => {
+
+            navbar.classList.toggle('sidebar-open');
+
+            if(navbar.classList.contains('sidebar-open')){
+
+                const backdrop = document.createElement('div');
+                backdrop.classList.add('backdrop');
+                
+                backdrop.addEventListener('click', e => {
+
+                    navbar.classList.remove('sidebar-open');
+                    document.querySelector('.backdrop').remove();
+
+                });
+
+                document.querySelector('body').append(backdrop);
+
+            } else {
+
+                document.querySelector('.backdrop').remove();
+            
+            }
+
+
+        });
+
+    </script>
+
+    </body>
+</html>
